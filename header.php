@@ -43,7 +43,7 @@
 
       <nav id="nav-main" class="navbar navbar-expand-lg navbar-dark">
 
-        <div class="<?= bootscore_container_class(); ?>">
+        <div class="container-fluid ">
 
           <!-- Navbar Brand -->
           <a class="navbar-brand xs d-md-none" href="<?= esc_url(home_url()); ?>"><img src="<?= esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.svg" alt="logo" class="logo xs"></a>
