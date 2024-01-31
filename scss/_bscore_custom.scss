@@ -24,6 +24,10 @@ body {
     right: 0;
 }
 
+.to-content-head {
+    width: 100%;
+}
+
 @include media-breakpoint-up(md) {
     body {
         padding-top: 66px;
