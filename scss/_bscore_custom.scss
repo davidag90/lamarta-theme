@@ -51,3 +51,34 @@ body {
     max-height: 100%;
     width: 100%;
 }
+
+.montorwine-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+   
+.montorwine-desc {
+    text-align: center;
+}
+   
+@include media-breakpoint-up(sm) {
+    .montorwine-info {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+   
+    .montorwine-pic {
+        max-width: 400px;
+        margin: 0;
+        padding: 1rem;
+    }
+   
+    .montorwine-desc {
+        text-align: left;
+    }
+}
