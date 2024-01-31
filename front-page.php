@@ -24,15 +24,24 @@ get_header();
 
       <div class="row">
         <div class="<?= bootscore_main_col_class(); ?>">
-
           <main id="main" class="site-main">
-
-            <header class="entry-header">
-              <?php the_post(); ?>
+            <?php the_post(); ?>
+            <header class="entry-header d-none">
               <h1><?php the_title(); ?></h1>
-              <?php bootscore_post_thumbnail(); ?>
             </header>
 
+            <div class="hero-slideshow-wrapper position-relative width-100">
+              <div class="to-content position-absolute">
+                <div class="to-content-head d-flex flex-column justify-content-center align-items-center bg-primary bg-opacity-50 text-light p-4">
+                  <img src="<?php echo get_stylesheet_directory_uri() ?>/img/front-page/logotipo.svg" />
+                  <p>Vinos cordobeses - Productos de la región</p>
+                </div>
+
+                <div class="to-content-link">
+                  <a class="btn btn-light link-primary" href="#">Conocer más!</a>
+                </div>
+              </div><!-- .to-content -->
+            </div><!-- .hero-slideshow-wrapper -->
             <div class="entry-content">
               <?php the_content(); ?>
             </div>
