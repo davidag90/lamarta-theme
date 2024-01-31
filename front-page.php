@@ -34,7 +34,7 @@ get_header();
               <img class="hero-slideshow-bg" src="<?php echo get_stylesheet_directory_uri() ?>/img/front-page/hero-bg.jpg">
 
               <div class="to-content position-absolute d-flex flex-column justify-content-center align-items-center">
-                <div class="to-content-head d-flex flex-column justify-content-center align-items-center bg-primary bg-opacity-50 text-light p-4 mb-3">
+                <div class="to-content-head d-flex flex-column justify-content-center align-items-center bg-primary bg-opacity-50 text-light py-2 px-4 mb-3">
                   <img src="<?php echo get_stylesheet_directory_uri() ?>/img/front-page/logotipo.svg" />
                   <p class="mt-2 mb-0">Vinos cordobeses - Productos de la región</p>
                 </div>
