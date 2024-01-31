@@ -1,101 +1,132 @@
 // Google Fonts
 /* outfit-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* outfit-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/outfit-v11-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/outfit-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 // Custom Styles
-html, body {
-    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+html,
+body {
+  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 body {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .navbar-brand > img {
-    height: 32px;
-    width: auto;
+  height: 32px;
+  width: auto;
 }
 
 .hero-slideshow-wrapper {
-    height: calc(100vh - 60px);
+  height: calc(100vh - 60px);
 }
 
 .to-content {
-    bottom: 15%;
-    left: 0;
-    right: 0;
+  bottom: 15%;
+  left: 0;
+  right: 0;
 }
 
 .to-content-head {
-    width: 100%;
+  width: 100%;
 }
 
 @include media-breakpoint-up(md) {
-    body {
-        padding-top: 66px;
-    }    
-    .navbar-brand > img {
-        height: 40px;
-    }
+  body {
+    padding-top: 66px;
+  }
+  .navbar-brand > img {
+    height: 40px;
+  }
 
-    .hero-slideshow-wrapper {
-        height: calc(100vh - 66px);
-    }
-    .to-content {
-        right: auto;
-    }
+  .hero-slideshow-wrapper {
+    height: calc(100vh - 66px);
+  }
+  .to-content {
+    right: auto;
+  }
 }
 
 .hero-slideshow-bg {
-    object-position: center;
-    object-fit: cover;
-    height: 100%;
-    max-height: 100%;
-    width: 100%;
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
 }
 
 .montorwine-info {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
 }
-   
+
 .montorwine-desc {
-    text-align: center;
+  text-align: center;
 }
-   
+
 @include media-breakpoint-up(sm) {
-    .montorwine-info {
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 1rem;
-    }
-   
-    .montorwine-pic {
-        max-width: 400px;
-        margin: 0;
-        padding: 1rem;
-    }
-   
-    .montorwine-desc {
-        text-align: left;
-    }
+  .montorwine-info {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .montorwine-pic {
+    max-width: 400px;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .montorwine-desc {
+    text-align: left;
+  }
+}
+
+#finca-lamarta {
+  color: var(--bs-light);
+  background: rgba(88, 15, 43, 0.4);
+  background-image: url("img/front-page/bg-finca-lamarta.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  min-height: 500px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#finca-lamarta p {
+  margin: 0;
+}
+
+#finca-lamarta > .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#finca-lamarta .btn {
+  margin-left: auto;
+  margin-right: auto;
 }
