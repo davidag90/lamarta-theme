@@ -20,7 +20,8 @@ body {
 
 .to-content {
     bottom: 15%;
-    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 @include media-breakpoint-up(md) {
@@ -35,8 +36,7 @@ body {
         height: calc(100vh - 66px);
     }
     .to-content {
-        left: 0;
-        width: auto;
+        right: auto;
     }
 }
 
