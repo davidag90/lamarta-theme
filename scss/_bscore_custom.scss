@@ -18,6 +18,11 @@ body {
     height: calc(100vh - 60px);
 }
 
+.to-content {
+    bottom: 10%;
+    width: 100%;
+}
+
 @include media-breakpoint-up(md) {
     body {
         padding-top: 66px;
@@ -29,6 +34,10 @@ body {
     .hero-slideshow-wrapper {
         height: calc(100vh - 66px);
     }
+    .to-content {
+        left: 0;
+        width: auto;
+    }
 }
 
 .hero-slideshow-bg {
@@ -36,9 +45,4 @@ body {
     object-fit: cover;
     max-height: 100%;
     width: 100%;
-}
-
-.to-content {
-    left: 0;
-    bottom: 0;
 }
