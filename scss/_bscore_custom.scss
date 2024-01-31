@@ -5,9 +5,23 @@
 // Add your own code here!
 // Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
 // Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
+body {
+    padding-top: 60px;
+}
+
 .navbar-brand > img {
-    height: 40px;
+    height: 32px;
     width: auto;
+}
+
+@include media-breakpoint-up(md) {
+    body {
+        padding-top: 66px
+    }
+
+    .navbar-brand > img {
+        height: 40px;
+    }
 }
 
 .hero-slideshow-wrapper {
@@ -16,7 +30,9 @@
 
 .hero-slideshow-bg {
     object-position: center;
-    object-fit: contain;
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
 }
 
 .to-content {
