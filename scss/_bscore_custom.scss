@@ -5,27 +5,25 @@
 // Add your own code here!
 // Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
 // Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
+$body-padding-top: 60px;
+$navbar-brand-height: 32px;
+
+@include media-breakpoint-up(md) {
+    $body-padding-top: 66px;
+    $navbar-brand-height: 40px;
+}
+
 body {
-    padding-top: 60px;
+    padding-top: $body-padding-top;
 }
 
 .navbar-brand > img {
-    height: 32px;
+    height: $navbar-brand-height;
     width: auto;
 }
 
-@include media-breakpoint-up(md) {
-    body {
-        padding-top: 66px
-    }
-
-    .navbar-brand > img {
-        height: 40px;
-    }
-}
-
 .hero-slideshow-wrapper {
-    height: 75vh;
+    height: calc(100vh - $body-padding-top);
 }
 
 .hero-slideshow-bg {
