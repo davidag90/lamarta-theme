@@ -42,9 +42,7 @@
     <div class="fixed-top bg-primary">
 
       <nav id="nav-main" class="navbar navbar-expand-lg navbar-dark">
-
-        <div class="container-fluid ">
-
+        <div class="container-fluid">
           <!-- Navbar Brand -->
           <a class="navbar-brand xs d-md-none" href="<?= esc_url(home_url()); ?>"><img src="<?= esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.svg" alt="logo" class="logo xs"></a>
           <a class="navbar-brand md d-none d-md-block" href="<?= esc_url(home_url()); ?>"><img src="<?= esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo.svg" alt="logo" class="logo md"></a>
@@ -55,7 +53,7 @@
               <span class="h5 offcanvas-title"><?php esc_html_e('Menu', 'bootscore'); ?></span>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body bg-primary">
 
               <!-- Bootstrap 5 Nav Walker Main Menu -->
               <?php
@@ -79,7 +77,6 @@
           </div>
 
           <div class="header-actions d-flex align-items-center">
-
             <!-- Top Nav Widget -->
             <?php if (is_active_sidebar('top-nav')) : ?>
               <?php dynamic_sidebar('top-nav'); ?>
