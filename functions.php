@@ -53,3 +53,18 @@ function top_footer_menu_args($nav_menu_args, $nav_menu, $args, $instance) {
 }
 
 add_filter('widget_nav_menu_args', 'top_footer_menu_args', 10, 4);
+
+
+
+function top_footer_widget_classes($params) {
+  // Verificar si es la zona para widgets específica
+  if ($params[0]['id'] === 'top-footer') {
+      // Realizar las modificaciones necesarias en las clases de la zona
+      // Por ejemplo, puedes modificar las clases de la zona aquí
+      $params[0]['before_widget'] = preg_replace('/class="(.*?)mb-5(.*?)"/', 'class="$1$2"', $params[0]['before_widget']);
+  }
+
+  return $params;
+}
+
+add_filter('dynamic_sidebar_params', 'top_footer_widget_classes');
