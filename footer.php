@@ -15,9 +15,8 @@
 ?>
 
 <footer>
-  <div class="bootscore-footer bg-primary bg-opacity-75">
+  <div class="bootscore-footer bg-primary">
     <div class="container-fluid">
-
       <div class="row bg-secondary">
         <div class="col">
           <!-- Top Footer Widget -->
@@ -75,7 +74,7 @@
     </div>
   </div>
 
-  <div class="bootscore-info bg-body-tertiary text-body-tertiary border-top py-2 text-center">
+  <div class="bootscore-info bg-primary text-bg-primary border-top py-2 text-center">
     <div class="container-fluid">
       <?php if (is_active_sidebar('footer-info')) : ?>
         <?php dynamic_sidebar('footer-info'); ?>
