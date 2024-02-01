@@ -113,17 +113,14 @@ body {
   min-height: 500px;
   font-size: 1.25rem;
   font-weight: 300;
-}
-
-#finca-lamarta p {
-  margin: 0;
-}
-
-#finca-lamarta > .col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+}
+
+#finca-lamarta p {
+  margin: 0;
 }
 
 #finca-lamarta .btn {
