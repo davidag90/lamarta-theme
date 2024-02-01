@@ -49,7 +49,7 @@
 
           <!-- Offcanvas Navbar -->
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
-            <div class="offcanvas-header text-bg-primary">
+            <div class="offcanvas-header text-bg-dark">
               <span class="h5 offcanvas-title"><?php esc_html_e('Menu', 'bootscore'); ?></span>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
