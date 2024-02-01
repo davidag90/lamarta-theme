@@ -104,7 +104,7 @@ body {
 
 #finca-lamarta {
   color: var(--bs-light);
-  background: rgba(88, 15, 43, 0.7);
+  background: rgba(var(--bs-dark-rgb), 0.7);
   background-image: url("../img/front-page/bg-finca-lamarta.jpg");
   background-position: center;
   background-repeat: no-repeat;
