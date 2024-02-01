@@ -21,7 +21,21 @@ get_header();
 
       <!-- Hook to add something nice -->
       <?php bs_after_primary(); ?>
+      <div class="hero-slideshow-wrapper position-relative">
+        <img class="hero-slideshow-bg" src="<?php echo get_stylesheet_directory_uri() ?>/img/front-page/hero-bg.jpg">
 
+        <div class="to-content position-absolute d-flex flex-column justify-content-center align-items-center">
+          <div class="to-content-head d-flex flex-column justify-content-center align-items-center bg-primary bg-opacity-75 text-light p-4 mb-3">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/front-page/logotipo.svg" />
+            <p class="mt-2 mb-0">Vinos cordobeses - Productos de la región</p>
+          </div>
+
+          <div class="to-content-link">
+            <a class="btn btn-light link-primary" href="#">Conocer más!</a>
+          </div>
+        </div><!-- .to-content -->
+      </div><!-- .hero-slideshow-wrapper -->
+      
       <div class="row">
         <div class="<?= bootscore_main_col_class(); ?>">
           <main id="main" class="site-main">
@@ -30,20 +44,6 @@ get_header();
               <h1><?php the_title(); ?></h1>
             </header>
 
-            <div class="hero-slideshow-wrapper position-relative">
-              <img class="hero-slideshow-bg" src="<?php echo get_stylesheet_directory_uri() ?>/img/front-page/hero-bg.jpg">
-
-              <div class="to-content position-absolute d-flex flex-column justify-content-center align-items-center">
-                <div class="to-content-head d-flex flex-column justify-content-center align-items-center bg-primary bg-opacity-75 text-light p-4 mb-3">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/img/front-page/logotipo.svg" />
-                  <p class="mt-2 mb-0">Vinos cordobeses - Productos de la región</p>
-                </div>
-
-                <div class="to-content-link">
-                  <a class="btn btn-light link-primary" href="#">Conocer más!</a>
-                </div>
-              </div><!-- .to-content -->
-            </div><!-- .hero-slideshow-wrapper -->
             <div class="entry-content">
               <?php the_content(); ?>
             </div>
