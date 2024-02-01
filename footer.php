@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row pt-3">
 
         <!-- Footer 1 Widget -->
         <div class="col-md-6 col-lg-3">
