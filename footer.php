@@ -27,7 +27,6 @@
       </div>
 
       <div class="row pt-3">
-
         <!-- Footer 1 Widget -->
         <div class="col-md-6 col-lg-3">
           <?php if (is_active_sidebar('footer-1')) : ?>
