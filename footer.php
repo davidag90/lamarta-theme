@@ -15,7 +15,7 @@
 ?>
 
 <footer>
-  <div class="bootscore-footer bg-primary bg-opacity-75 pt-5 pb-3">
+  <div class="bootscore-footer bg-primary bg-opacity-75">
     <div class="<?= bootscore_container_class(); ?>">
 
       <!-- Top Footer Widget -->
