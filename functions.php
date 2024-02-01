@@ -25,10 +25,16 @@ add_action( 'after_setup_theme', 'restore_classic_widgets' );
 
 // Filtrar las clases del elemento li
 function top_footer_menu_li_classes($classes, $item, $args, $depth) {
-  // Agregar clases al elemento li
-  $classes[] = 'nav-link link-light';
+  $classes[] = 'nav-item';
 
   return $classes;
+}
+
+// Filtra clases de los <a> internos
+function top_footer_menu_link_attributes($atts, $item, $args, $depth) {
+  $atts['class'] .= ' nav-link link-light';
+  
+  return $atts;
 }
 
 // Filtrar las opciones del menú dentro de un widget
@@ -40,6 +46,7 @@ function top_footer_menu_args($nav_menu_args, $nav_menu, $args, $instance) {
 
       // Agregar clases al elemento li
       add_filter('nav_menu_css_class', 'top_footer_menu_li_classes', 10, 4);
+      add_filter('nav_menu_link_attributes', 'top_footer_menu_link_attributes', 10, 4);
   }
 
   return $nav_menu_args;
