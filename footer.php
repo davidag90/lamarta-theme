@@ -18,10 +18,14 @@
   <div class="bootscore-footer bg-primary bg-opacity-75">
     <div class="<?= bootscore_container_class(); ?>">
 
-      <!-- Top Footer Widget -->
-      <?php if (is_active_sidebar('top-footer')) : ?>
-        <?php dynamic_sidebar('top footer'); ?>
-      <?php endif; ?>
+      <div class="row bg-secondary">
+        <div class="col">
+          <!-- Top Footer Widget -->
+          <?php if (is_active_sidebar('top-footer')) : ?>
+            <?php dynamic_sidebar('top footer'); ?>
+          <?php endif; ?>
+        </div>
+      </div>
 
       <div class="row">
 

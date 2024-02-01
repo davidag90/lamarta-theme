@@ -26,7 +26,7 @@ add_action( 'after_setup_theme', 'restore_classic_widgets' );
 // Filtrar las clases del elemento li
 function top_footer_menu_li_classes($classes, $item, $args, $depth) {
   // Agregar clases al elemento li
-  $classes[] = 'nav-link';
+  $classes[] = 'nav-link link-light';
 
   return $classes;
 }
