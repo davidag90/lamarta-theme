@@ -72,33 +72,33 @@ body {
 }
 
 .montorwine-info {
+  background-color: var(--bs-light);
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 0;
 }
 
 .montorwine-desc {
-  text-align: center;
+  padding: 0 1.5rem 1.5rem;
+  text-align:center;
 }
 
 @include media-breakpoint-up(sm) {
   .montorwine-info {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1rem;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:2rem;
   }
-
   .montorwine-pic {
-    max-width: 400px;
-    margin: 0;
-    padding: 1rem;
+    margin:0;
+    padding:0;
+    max-width: 50%;
   }
-
   .montorwine-desc {
-    text-align: left;
+    padding: 0;
+    text-align:left
   }
 }
 
