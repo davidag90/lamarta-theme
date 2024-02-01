@@ -153,6 +153,19 @@ body {
   font-weight: bold;
  }
 
+ @include media-breakpoint-up(md) {
+  .eventos-privados-desc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+   }
+   
+   .eventos-privados-desc > .btn {
+    margin: 0 auto;
+   }
+ }
+
  .footer_widget img {
   max-width: 300px !important; 
  }
