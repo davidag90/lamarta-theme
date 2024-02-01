@@ -15,4 +15,8 @@ function bootscore_child_enqueue_styles() {
   wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/custom.js', false, '', true);
 }
 
-remove_theme_support( 'widgets-block-editor' ); // Restaura widgets clásicos
+function restore_classic_widgets() {
+  remove_theme_support( 'widgets-block-editor' ); // Restaura widgets clásicos
+}
+
+add_action( 'after_setup_theme', 'restore_classic_widgets' );
