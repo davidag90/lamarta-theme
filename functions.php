@@ -15,8 +15,34 @@ function bootscore_child_enqueue_styles() {
   wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/custom.js', false, '', true);
 }
 
+// Restaura la funcionalidad de widgets clásicos y desactiva el widget-block-editor
 function restore_classic_widgets() {
   remove_theme_support( 'widgets-block-editor' ); // Restaura widgets clásicos
 }
 
 add_action( 'after_setup_theme', 'restore_classic_widgets' );
+
+
+// Filtrar las clases del elemento li
+function top_footer_menu_li_classes($classes, $item, $args, $depth) {
+  // Agregar clases al elemento li
+  $classes[] = 'nav-link';
+
+  return $classes;
+}
+
+// Filtrar las opciones del menú dentro de un widget
+function top_footer_menu_args($nav_menu_args, $nav_menu, $args, $instance) {
+  // Verificar si el widget es el que deseas
+  if ($args['widget_id'] === 'nav_menu-2') {
+      // Agregar clases al elemento ul
+      $nav_menu_args['menu_class'] .= ' nav justify-content-center';
+
+      // Agregar clases al elemento li
+      add_filter('nav_menu_css_class', 'top_footer_menu_li_classes', 10, 4);
+  }
+
+  return $nav_menu_args;
+}
+
+add_filter('widget_nav_menu_args', 'top_footer_menu_args', 10, 4);
