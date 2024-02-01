@@ -28,28 +28,28 @@
 
       <div class="row pt-3">
         <!-- Footer 1 Widget -->
-        <div class="col-md-6 col-lg-3">
+        <div id="widget-1-wrapper" class="col-md-6 col-lg-3">
           <?php if (is_active_sidebar('footer-1')) : ?>
             <?php dynamic_sidebar('footer-1'); ?>
           <?php endif; ?>
         </div>
 
         <!-- Footer 2 Widget -->
-        <div class="col-md-6 col-lg-3">
+        <div id="widget-2-wrapper" class="col-md-6 col-lg-3">
           <?php if (is_active_sidebar('footer-2')) : ?>
             <?php dynamic_sidebar('footer-2'); ?>
           <?php endif; ?>
         </div>
 
         <!-- Footer 3 Widget -->
-        <div class="col-md-6 col-lg-3">
+        <div id="widget-3-wrapper" class="col-md-6 col-lg-3">
           <?php if (is_active_sidebar('footer-3')) : ?>
             <?php dynamic_sidebar('footer-3'); ?>
           <?php endif; ?>
         </div>
 
         <!-- Footer 4 Widget -->
-        <div class="col-md-6 col-lg-3">
+        <div id="widget-4-wrapper" class="col-md-6 col-lg-3">
           <?php if (is_active_sidebar('footer-4')) : ?>
             <?php dynamic_sidebar('footer-4'); ?>
           <?php endif; ?>

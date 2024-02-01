@@ -199,3 +199,17 @@ body {
     flex-direction: row;
   }
  }
+
+.widget_text {
+  height: 100%;
+}
+
+.widget_text .custom-html-widget {
+  height: 100%;
+}
+
+.widget_text .custom-html-widget .footer-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
