@@ -18,7 +18,7 @@
   <div class="bootscore-footer bg-primary">
     <div class="container-fluid">
       <div class="row bg-secondary py-3 ">
-        <div class="col">
+        <div class="col-12">
           <!-- Top Footer Widget -->
           <?php if (is_active_sidebar('top-footer')) : ?>
             <?php dynamic_sidebar('top footer'); ?>
