@@ -21,7 +21,7 @@ get_header();
 
       <!-- Hook to add something nice -->
       <?php bs_after_primary(); ?>
-      <div class="hero-slideshow-wrapper position-relative">
+      <div class="hero-slideshow-wrapper position-relative width-100">
         <img class="hero-slideshow-bg" src="<?php echo get_stylesheet_directory_uri() ?>/img/front-page/hero-bg.jpg">
 
         <div class="to-content position-absolute d-flex flex-column justify-content-center align-items-center">
