@@ -30,7 +30,7 @@ get_header();
               <h1><?php the_title(); ?></h1>
             </header>
 
-            <div class="hero-slideshow-wrapper position-relative width-100">
+            <div class="hero-slideshow-wrapper position-relative">
               <img class="hero-slideshow-bg" src="<?php echo get_stylesheet_directory_uri() ?>/img/front-page/hero-bg.jpg">
 
               <div class="to-content position-absolute d-flex flex-column justify-content-center align-items-center">
