@@ -42,7 +42,7 @@ function top_footer_menu_args($nav_menu_args, $nav_menu, $args, $instance) {
   // Verificar si el widget es el que deseas
   if ($args['widget_id'] === 'nav_menu-2') {
       // Agregar clases al elemento ul
-      $nav_menu_args['menu_class'] .= ' nav justify-content-center';
+      $nav_menu_args['menu_class'] .= ' nav';
 
       // Agregar clases al elemento li
       add_filter('nav_menu_css_class', 'top_footer_menu_li_classes', 10, 4);
