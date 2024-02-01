@@ -49,7 +49,7 @@
 
           <!-- Offcanvas Navbar -->
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
-            <div class="offcanvas-header">
+            <div class="offcanvas-header text-bg-primary">
               <span class="h5 offcanvas-title"><?php esc_html_e('Menu', 'bootscore'); ?></span>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -91,7 +91,7 @@
             ?>
 
             <!-- Navbar Toggler -->
-            <button class="btn btn-outline-secondary d-lg-none ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
+            <button class="btn btn-outline-light d-lg-none ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
               <i class="fa-solid fa-bars"></i><span class="visually-hidden-focusable">Menu</span>
             </button>
 
