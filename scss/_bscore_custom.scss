@@ -131,6 +131,15 @@ body {
   margin-right: auto;
 }
 
+#finca-lamarta > .overlay-bottom {
+  height: 15%;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #fff);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+ }
+
 #eventos-privados {
   background: rgba(223, 209, 194, 0.6);
   background-image: url("../img/front-page/bg-eventos-privados.jpg");
