@@ -39,6 +39,7 @@ body {
 
 .hero-slideshow-wrapper {
   height: calc(100vh - 60px);
+  height: calc(100svh - 60px);
 }
 
 .to-content {
@@ -61,6 +62,7 @@ body {
 
   .hero-slideshow-wrapper {
     height: calc(100vh - 66px);
+    height: calc(100svh - 66px);
   }
   .to-content {
     right: auto;
