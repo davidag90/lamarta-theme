@@ -31,7 +31,7 @@ get_header();
           </div>
 
           <div class="to-content-link">
-            <a class="btn btn-light link-primary" href="#">Conocer más!</a>
+            <a class="btn btn-light link-primary" href="#finca-lamarta">Conocer más!</a>
           </div>
         </div><!-- .to-content -->
       </div><!-- .hero-slideshow-wrapper -->
