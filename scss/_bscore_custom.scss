@@ -216,3 +216,12 @@ body {
   align-items: center;
   height: 100%;
 }
+
+.center-small-sep {
+  display: block;
+  border: none;
+  height: 1px;
+  background: rgba(var(--bs-dark-rgb), 0.5);
+  width: 60px;
+  margin: 1rem auto;
+}
