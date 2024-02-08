@@ -5,8 +5,8 @@
       <main id="main" class="site-main">
 
         <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full'); ?>
-        <header class="entry-header featured-full-width-img height-75 bg-dark text-light mb-3" style="background-image: linear-gradient(to bottom, rgba(223, 209, 194, 0.75), rgba(223, 209, 194, 0.9)), url('<?= $thumb['0']; ?>')">
-          <div class="<?= bootscore_container_class(); ?> entry-header h-100 d-flex align-items-end pb-3">
+        <header class="entry-header featured-full-width-img height-75 bg-dark text-light mb-3" style="background-image: linear-gradient(to bottom, rgba(223, 209, 194, 0.4), rgba(223, 209, 194, 0.6)), url('<?= $thumb['0']; ?>')">
+          <div class="<?= bootscore_container_class(); ?> entry-header h-100 d-flex align-items-center justify-content-center">
             <div>
               <h1 class="entry-title"><?php the_title(); ?></h1>
             </div>
