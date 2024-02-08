@@ -19,14 +19,11 @@
           <?php bs_after_primary(); ?>
 
           <div class="row">
-            <div class="<?= bootscore_main_col_class(); ?>">
-
+            <div class="col-xs-12 col-md-10 col-xl-8">
               <div class="entry-content">
                 <?php the_content(); ?>
-              </div>  
-
+              </div>
             </div>
-            <?php get_sidebar(); ?>
           </div>
         </div>
 
