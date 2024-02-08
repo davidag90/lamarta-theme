@@ -25,10 +25,6 @@
                 <?php the_content(); ?>
               </div>
 
-              <footer class="entry-footer">
-                <?php comments_template(); ?>
-              </footer>
-
             </div>
             <?php get_sidebar(); ?>
           </div>
