@@ -68,3 +68,16 @@ function top_footer_widget_classes($params) {
 }
 
 add_filter('dynamic_sidebar_params', 'top_footer_widget_classes');
+
+// Agregar page-slug a la función body_class()
+function add_slug_body_class( $classes ) {
+  global $post;
+  
+  if ( isset( $post ) ) {
+    $classes[] = $post->post_type . '-' . $post->post_name;
+  }
+  
+  return $classes;
+}
+
+add_filter( 'body_class', 'page_slug_body_class' );
