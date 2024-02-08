@@ -217,11 +217,17 @@ body {
   height: 100%;
 }
 
+.page-nuestra-finca h2 {
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
 .center-small-sep {
   display: block;
   border: none;
   height: 1px;
   background: rgba(var(--bs-dark-rgb), 0.5);
   width: 60px;
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
 }
