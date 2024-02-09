@@ -1,4 +1,5 @@
 // Fonts
+/* outfit-300 - latin */
 @font-face {
   font-display: swap;
   font-family: 'Outfit';
@@ -6,15 +7,14 @@
   font-weight: 300;
   src: url('../fonts/outfit-v11-latin-300.woff2') format('woff2');
 }
-
+/* outfit-500 - latin */
 @font-face {
   font-display: swap;
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/outfit-v11-latin-700.woff2') format('woff2'); //Test
+  font-weight: 500;
+  src: url('../fonts/outfit-v11-latin-500.woff2') format('woff2');
 }
-
 // Custom Styles
 html,
 body {
