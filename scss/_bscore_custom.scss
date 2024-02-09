@@ -59,15 +59,15 @@ body {
 
 @include media-breakpoint-up(md) {
   body {
-    padding-top: 66px;
+    padding-top: 65px;
   }
   .navbar-brand > img {
     height: 40px;
   }
 
   .hero-slideshow-wrapper {
-    height: calc(100vh - 66px);
-    height: calc(100svh - 66px);
+    height: calc(100vh - 65px);
+    height: calc(100svh - 65px);
   }
   .to-content {
     right: auto;
