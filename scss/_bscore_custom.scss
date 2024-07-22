@@ -27,6 +27,11 @@ body {
   padding-top: 60px;
 }
 
+body.woocommerce {
+  background-image: linear-gradient(to right, rgba(223, 209, 194, 0.25), rgba(223, 209, 194, 0.75)), url(../img/front-page/bg-store.png);
+  background-blend-mode: luminosity;
+}
+
 @include media-breakpoint-up(lg) {
   body {
     font-size: 18px;
