@@ -27,9 +27,14 @@ body {
   padding-top: 60px;
 }
 
-body.woocommerce {
-  background-image: linear-gradient(to right, rgba(223, 209, 194, 0.25), rgba(223, 209, 194, 0.75)), url(../img/front-page/bg-store.png);
-  background-blend-mode: luminosity;
+.woocommerce #content {
+  background-image: linear-gradient(to right, rgba(223, 209, 194, 0.7), rgba(223, 209, 194, 0.95)), url(../img/front-page/bg-store.png);
+  background-blend-mode: normal;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  min-height: 100%;
 }
 
 @include media-breakpoint-up(lg) {
