@@ -27,7 +27,7 @@ body {
   padding-top: 60px;
 }
 
-.woocommerce #content {
+body.woocommerce {
   background-image: linear-gradient(to right, rgba(223, 209, 194, 0.7), rgba(223, 209, 194, 0.95)), url(../img/front-page/bg-store.png);
   background-blend-mode: normal;
   background-position: bottom center;
