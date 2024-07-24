@@ -27,14 +27,6 @@ body {
   padding-top: 60px;
 }
 
-body.woocommerce {
-  background-image: linear-gradient(to bottom, rgba(223, 209, 194, 0.7), rgba(223, 209, 194, 0.7)), url(../img/front-page/bg-store.png);
-  background-blend-mode: normal;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 @include media-breakpoint-up(lg) {
   body {
     font-size: 18px;
@@ -90,9 +82,17 @@ body.woocommerce {
   width: 100%;
 }
 
-.montorwine-store {
-  background-image: linear-gradient(to right, rgba(223, 209, 194,0.25), rgba(223, 209, 194,0.75)), url('../img/front-page/bg-store.png');
-  background-blend-mode: luminosity;
+body.woocommerce, .montorwine-store {
+  background-color: var(--bs-light);
+  background-image: url("../img/front-page/bg-store.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+body.woocommerce {
+  background-attachment: fixed;
 }
 
 .montorwine-info {
