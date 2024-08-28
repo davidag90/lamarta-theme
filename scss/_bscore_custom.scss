@@ -1,36 +1,52 @@
 // Fonts
-/* outfit-300 - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/outfit-v11-latin-300.woff2') format('woff2');
-}
-/* outfit-500 - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/outfit-v11-latin-500.woff2') format('woff2');
-}
-// Custom Styles
-html,
-body {
-  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-}
+  // Headings
+    /* libre-caslon-text-regular - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Libre Caslon Text';
+      font-style: normal;
+      font-weight: 400;
+      src: url('../fonts/libre-caslon-text-v5-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
 
+  // Paragraphs
+    /* overpass-regular - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Overpass';
+      font-style: normal;
+      font-weight: 400;
+      src: url('../fonts/overpass-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* overpass-italic - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Overpass';
+      font-style: italic;
+      font-weight: 400;
+      src: url('../fonts/overpass-v13-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* overpass-700 - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Overpass';
+      font-style: normal;
+      font-weight: 700;
+      src: url('../fonts/overpass-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* overpass-700italic - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Overpass';
+      font-style: italic;
+      font-weight: 700;
+      src: url('../fonts/overpass-v13-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+
+
+// Custom Styles
 body {
   padding-top: 60px;
-}
-
-@include media-breakpoint-up(lg) {
-  body {
-    font-size: 18px;
-  }
 }
 
 .offcanvas-header > .btn-close {
@@ -82,7 +98,7 @@ body {
   width: 100%;
 }
 
-body.woocommerce, .montorwine-store {
+body.woocommerce, #montorwine-store {
   background-color: var(--bs-light);
   background-image: url("../img/front-page/bg-store.png");
   background-position: bottom center;
@@ -247,4 +263,22 @@ body.woocommerce {
   background: rgba(var(--bs-dark-rgb), 0.5);
   width: 60px;
   margin: 0 auto 1rem;
+}
+
+#montorwine-store #montorwine-store-title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(var(--bs-dark-rgb), 0.1);
+  margin-bottom: 2rem !important;
+}
+
+#montorwine-store .woocommerce-loop-product__title {
+  font-family: $font-family-sans-serif !important;
+  font-weight: bold !important;
+  font-size: 1.25rem !important;
+}
+
+#montorwine-hero img {
+  right: 10%;
+  bottom: 15%;
+  width: max(25vw, 240px);
 }
